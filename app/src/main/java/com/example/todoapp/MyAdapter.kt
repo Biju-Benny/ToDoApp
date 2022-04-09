@@ -18,12 +18,13 @@ class MyAdapter(val context: Context, val toDoList: ArrayList<Task>, val onClick
             itemView.priorityCardTV.text = task.priority
 
             if(task.priority == "High"){
-                itemView.setBackgroundResource(R.drawable.high_bg)
+                itemView.setBackgroundResource(R.drawable.outline_high)
+
 
             }else if(task.priority == "Medium"){
-                itemView.setBackgroundResource(R.drawable.medium_bg)
+                itemView.setBackgroundResource(R.drawable.outline_medium)
             }else{
-                itemView.setBackgroundResource(R.drawable.low_bg)
+                itemView.setBackgroundResource(R.drawable.outline_low)
             }
         }
 
